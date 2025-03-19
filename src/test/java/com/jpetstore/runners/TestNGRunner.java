@@ -3,6 +3,7 @@ package com.jpetstore.runners;
 
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -26,7 +27,8 @@ public class TestNGRunner extends AbstractTestNGCucumberTests{
 	
 	@BeforeTest
 	@Parameters({"browser","url"})
-	public void setUp(String browserParam , String urlParam) {
+	public void setUp(@Optional("edge") String browserParam,
+					  @Optional("https://petstore.octoperf.com/") String urlParam) {
 		
 		browser = browserParam;
 		appUrl = urlParam;

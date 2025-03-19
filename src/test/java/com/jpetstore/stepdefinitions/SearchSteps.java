@@ -58,6 +58,6 @@ public class SearchSteps {
 	public void a_empty_list_should_be_displayed() throws InterruptedException {
 		 Assert.assertFalse(searchPage.verifyPetList());
 		 Hooks.captureFailScreenshot(webDriver, "Empty_List");
-		 Thread.sleep(2000);	   
+		 Thread.sleep(3000);	   
 	}
 }

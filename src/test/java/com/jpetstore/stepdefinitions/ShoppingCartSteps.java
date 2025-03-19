@@ -72,7 +72,7 @@ public class ShoppingCartSteps {
 		Assert.assertFalse(shoppingCartPage.isProductInStock());
 	    shoppingCartPage.removeItemFromCart();
 	    Hooks.captureFailScreenshot(webDriver, "Pet_Removed");
-	    Thread.sleep(2000);
+	    Thread.sleep(3000);
 	}
 
 }
